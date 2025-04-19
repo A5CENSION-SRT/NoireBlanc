@@ -10,28 +10,27 @@ const Navbar = () => {
                     <li className='link-items mega-menu-container'>categories ▼
                         <div className="mega-menu">
                             <div className="mega-column">
-                                <h4>New & Trending</h4>
-                                <a href="#">New Arrivals</a>
-                                <a href="#">Best Sellers</a>
-                                <a href="#">Only at Noice</a>
+                                <h4>cat1</h4>
+                                <a href="#">prod1</a>
+                                <a href="#">prod2</a>
+                                <a href="#">prod3</a>
                             </div>
                             <div className="mega-column">
-                                <h4>Shoes</h4>
-                                <a href="#">Sneakers</a>
-                                <a href="#">Loafers</a>
-                                <a href="#">Boots</a>
+                                <h4>cat2</h4>
+                                <a href="#">prod1</a>
+                                <a href="#">pro2</a>
+                                <a href="#">prod3</a>
                             </div>
                             <div className="mega-column">
-                                <h4>Clothing</h4>
-                                <a href="#">T-Shirts</a>
-                                <a href="#">Hoodies</a>
-                                <a href="#">Jackets</a>
-                            </div>
-                            <div className="mega-column">
-                                <h4>Accessories</h4>
-                                <a href="#">Bags</a>
-                                <a href="#">Caps</a>
-                                <a href="#">Sunglasses</a>
+                                <h4>cat3</h4>
+                                <a href="#">prod1</a>
+                                <a href="#">pro2</a>
+                                <a href="#">prod3</a>
+                            </div><div className="mega-column">
+                                <h4>cat4</h4>
+                                <a href="#">prod1</a>
+                                <a href="#">pro2</a>
+                                <a href="#">prod3</a>
                             </div>
                         </div> 
                     </li>
