@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-body {
-    padding: 0;
-    margin: 0;
-}
 
 .navbar {
     background-color: #0A0A0A;
@@ -88,6 +83,20 @@ body {
     transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), margin-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     margin-top: 10px;
 }
+    @media screen and (max-width: 1000px) {
+        .mega-menu {
+            width: 550px;
+            grid-template-columns: repeat(2,2fr);
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .links{
+            gap: 1rem;
+        }
+        
+    }
+
+
   
 .mega-menu a {
     display: block;
