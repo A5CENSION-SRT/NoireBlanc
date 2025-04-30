@@ -11,8 +11,8 @@ const SortFilter = () => {
           sort by <FontAwesomeIcon icon={faSort} style={{color: "#0f1112"}} />
           <div className="dropdown-bridge"></div>
           <div className="sort-dropdown-menu">
-            <div className='sort-option'>price: low to high</div>
-            <div className='sort-option'>price: high to low</div>
+            <div className='sort-option'>price: $ to $$$ </div>
+            <div className='sort-option'>price: $$$ to $</div>
             <div className='sort-option'>name: A-Z</div>
             <div className='sort-option'>name: Z-A</div>
           </div>
