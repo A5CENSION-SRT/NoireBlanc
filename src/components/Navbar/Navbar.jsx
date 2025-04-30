@@ -14,28 +14,32 @@ const Navbar = () => {
                                 <a href="#">prod1</a>
                                 <a href="#">prod2</a>
                                 <a href="#">prod3</a>
+                                <a href="#">prod4</a>
                             </div>
                             <div className="mega-column">
                                 <h4>cat2</h4>
                                 <a href="#">prod1</a>
                                 <a href="#">pro2</a>
                                 <a href="#">prod3</a>
+                                <a href="#">prod4</a>
                             </div>
                             <div className="mega-column">
                                 <h4>cat3</h4>
                                 <a href="#">prod1</a>
                                 <a href="#">pro2</a>
                                 <a href="#">prod3</a>
+                                <a href="#">prod4</a>
                             </div><div className="mega-column">
                                 <h4>cat4</h4>
                                 <a href="#">prod1</a>
                                 <a href="#">pro2</a>
                                 <a href="#">prod3</a>
+                                <a href="#">prod4</a>
                             </div>
                         </div> 
                     </li>
                     <li className="link-items">
-                        <a href="#">search</a>
+                        <a href="#">products</a>
                     </li>
                 </ul>
             </div>
