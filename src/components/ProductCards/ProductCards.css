@@ -1,0 +1,36 @@
+.product-card-image {
+    overflow: hidden;   
+    
+}
+.product-card{
+    position: relative;
+}
+
+.product-card-image img {
+    
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer;
+}
+
+.product-card-image:hover img {
+    transform: scale(1.08);
+}
+.product-card-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 4px 4px 4px 4px;
+    box-sizing: border-box;
+    font-family: "Major Mono Display", monospace;
+}

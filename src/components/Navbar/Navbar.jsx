@@ -1,7 +1,8 @@
 import React from 'react'
 import './Navbar.css'
-
+import ProductsData from '../../data/ProductData'
 const Navbar = () => {
+    
   return (
     <div>
         <nav className="navbar">
@@ -10,18 +11,22 @@ const Navbar = () => {
                     <li className='link-items mega-menu-container'>categories ▼
                         <div className="mega-menu">
                             <div className="mega-column">
-                                <h4>cat1</h4>
-                                <a href="#">prod1</a>
-                                <a href="#">prod2</a>
-                                <a href="#">prod3</a>
-                                <a href="#">prod4</a>
+                                <h4>24K Loadout</h4>
+                                {ProductsData
+                                  .filter(product => product.type === "24K Loadout")
+                                  .map(product => (
+                                    <a href="#" key={product.id}>{product.name}</a>
+                                  ))
+                                }
                             </div>
                             <div className="mega-column">
-                                <h4>cat2</h4>
-                                <a href="#">prod1</a>
-                                <a href="#">pro2</a>
-                                <a href="#">prod3</a>
-                                <a href="#">prod4</a>
+                                <h4>Blacked Edition</h4>
+                                {ProductsData
+                                  .filter(product => product.type === "Blacked Edition")
+                                  .map(product => (
+                                    <a href="#" key={product.id}>{product.name}</a>
+                                  ))
+                                }
                             </div>
                             <div className="mega-column">
                                 <h4>cat3</h4>
@@ -39,7 +44,7 @@ const Navbar = () => {
                         </div> 
                     </li>
                     <li className="link-items">
-                        <a href="#">products</a>
+                        <a href="products">products</a>
                     </li>
                 </ul>
             </div>
