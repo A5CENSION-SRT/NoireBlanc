@@ -4,7 +4,7 @@ const IntroVid = () => {
   return (
     <div>
       <div className='vid-container'>
-        <video className='intro-vid' autoplay loop muted>
+        <video className='intro-vid' autoplay loop autoPlay muted>
           <source src="/videos/introvid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

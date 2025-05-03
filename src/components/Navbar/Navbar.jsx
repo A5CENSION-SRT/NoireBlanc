@@ -45,20 +45,23 @@ const Navbar = () => {
                             ))
                             }
                             </div><div className="mega-column">
-                                <h4>cat4</h4>
-                                <a href="#">prod1</a>
-                                <a href="#">pro2</a>
-                                <a href="#">prod3</a>
-                                <a href="#">prod4</a>
+                                <h4>Ironclad Series</h4>
+                                {ProductsData
+                                .filter(product => product.type === "Ironclad Series")
+                                .map(product =>(
+                                    <Link to={`/products/${product.id}`} key={product.id}>
+                                        {product.name}
+                                    </Link>
+                                ))}
                             </div>
                         </div> 
                     </li>
                     <li className="link-items">
-                        <a href="products">products</a>
+                        <Link to= "/products">products</Link>
                     </li>
                 </ul>
             </div>
-            <div className="brand-name"><a href="#">NOIRE & BLANC</a></div>
+            <div className="brand-name"><Link to = {`/home`}>NOIRE & BLANC</Link></div>
             <div className="nav-right">
                 <ul className="links">
                     <li className='link-items'><a href="#">cart</a></li>

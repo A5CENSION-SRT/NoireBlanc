@@ -26,8 +26,8 @@ const SortFilter = ({ sortOption, setSortOption, filterOption, setFilterOption }
             <div className='filter-option' onClick={() => setFilterOption('all')}>all</div>
             <div className='filter-option' onClick={() => setFilterOption('24K Loadout')}>24K loadout</div>
             <div className='filter-option' onClick={() => setFilterOption('Blacked Edition')}>Blacked edition</div>
-            <div className='filter-option' onClick={() => setFilterOption('category 3')}>category 3</div>
-            <div className='filter-option' onClick={() => setFilterOption('category 4')}>category 4</div>
+            <div className='filter-option' onClick={() => setFilterOption('Vanta Noir')}>Vanta Noir</div>
+            <div className='filter-option' onClick={() => setFilterOption('Ironclad Series')}>Ironclad Series</div>
           </div>
         </div>
       </div>

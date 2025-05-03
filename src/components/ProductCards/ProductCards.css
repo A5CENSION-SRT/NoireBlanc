@@ -4,6 +4,7 @@
 }
 .product-card{
     position: relative;
+    color: black;
 }
 
 .product-card-image img {
