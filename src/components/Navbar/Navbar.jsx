@@ -1,6 +1,8 @@
 import React from 'react'
 import './Navbar.css'
 import ProductsData from '../../data/ProductData'
+import { Link } from 'react-router-dom'
+
 const Navbar = () => {
     
   return (
@@ -15,7 +17,9 @@ const Navbar = () => {
                                 {ProductsData
                                   .filter(product => product.type === "24K Loadout")
                                   .map(product => (
-                                    <a href="#" key={product.id}>{product.name}</a>
+                                    <Link to={`/products/${product.id}`} key={product.id}>
+                                      {product.name}
+                                    </Link>
                                   ))
                                 }
                             </div>
@@ -24,16 +28,22 @@ const Navbar = () => {
                                 {ProductsData
                                   .filter(product => product.type === "Blacked Edition")
                                   .map(product => (
-                                    <a href="#" key={product.id}>{product.name}</a>
+                                    <Link to={`/products/${product.id}`} key={product.id}>
+                                      {product.name}
+                                    </Link>
                                   ))
                                 }
                             </div>
                             <div className="mega-column">
-                                <h4>cat3</h4>
-                                <a href="#">prod1</a>
-                                <a href="#">pro2</a>
-                                <a href="#">prod3</a>
-                                <a href="#">prod4</a>
+                                <h4>Vanta Noir</h4>
+                            {ProductsData
+                            .filter(product => product.type === "Vanta Noir")
+                            .map(product => (
+                                <Link to={`/products/${product.id}`} key={product.id}>
+                                    {product.name}
+                                </Link>
+                            ))
+                            }
                             </div><div className="mega-column">
                                 <h4>cat4</h4>
                                 <a href="#">prod1</a>
