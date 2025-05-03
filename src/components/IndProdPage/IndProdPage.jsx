@@ -1,16 +1,10 @@
 import React from 'react'
-import "./ProductPage.css"
-import { useParams } from 'react-router-dom'
-import ProductsData from '../../data/ProductData'
-import Navbar from '../../components/Navbar/Navbar'
+import './IndProdPage.css'
 
-const ProductPage = () => {
-    const { id } = useParams()
-    const product = ProductsData.find((product) => product.id === Number(id))
+const IndProdPage = ({product}) => {
   return (
     <div>
-    <Navbar/>
-    <div className='product-page-container'>
+      <div className='product-page-container'>
         <div className='product-image-container'>
             <img src={product.image} alt={product.name} className='product-image'/>
         </div>
@@ -26,4 +20,4 @@ const ProductPage = () => {
   )
 }
 
-export default ProductPage
+export default IndProdPage
