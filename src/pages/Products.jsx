@@ -6,6 +6,7 @@ import ProductsData from '../data/ProductData'
 const Products = () => {
   const [sortOption , setSortOption] = useState('default')
   const [filterOption , setFilterOption] = useState('all')
+  
   let finalProducts = [...ProductsData]
   if (filterOption !== 'all'){
     finalProducts = finalProducts.filter(

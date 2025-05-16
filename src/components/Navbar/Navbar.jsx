@@ -61,10 +61,10 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="brand-name"><Link to = {`/home`}>NOIRE & BLANC</Link></div>
+            <div className="brand-name"><Link to = "/home">NOIRE & BLANC</Link></div>
             <div className="nav-right">
                 <ul className="links">
-                    <li className='link-items'><a href="#">cart</a></li>
+                    <li className='link-items'><Link to="/cart">cart</Link></li>
                     <li className='link-items'><a href="#">profile</a></li>
                 </ul>
             </div>
