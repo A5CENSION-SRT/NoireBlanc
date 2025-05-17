@@ -1,0 +1,13 @@
+.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    font-size: 4rem;
+    font-family: "Major Mono Display", monospace;
+    text-align: center;
+}
+.cart-items-container {
+    align-items: center;
+    justify-content: center;
+}
