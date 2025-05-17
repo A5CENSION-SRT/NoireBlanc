@@ -1,5 +1,5 @@
 import React , {useState, useEffect}from 'react'
-import '../cart/cartItems.css'
+import './CartItems.css'
 
 
 const CartItems = () => {
