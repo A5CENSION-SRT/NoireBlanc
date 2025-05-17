@@ -70,8 +70,7 @@ const CartItems = () => {
 
 
                     <div className='items-catalog'>
-                        {
-                            cartItems.map(item =>(
+                        {cartItems.map(item =>(
                                 <h4 key={item.id}>{item.name} x {item.quantity} = $ {item.price * item.quantity}</h4>
                             ))
                         }
