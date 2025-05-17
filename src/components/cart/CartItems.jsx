@@ -14,6 +14,20 @@ const CartItems = () => {
     const total = cartItems.reduce((sum, item) => 
         sum + (item.quantity * item.price)
     , 0)
+    const incrementprod =(item)=>{
+        setCartItems(cartItems.map(product => product.id === item.id
+            ?{...item,quantity: item.quantity + 1}:item
+        ))
+    }
+    const decrementprod =(item)=>{
+        setCartItems(cartItems.map(product => product.id === item.id
+            ?{...item,quantity: item.quantity - 1}:item
+        ))
+    }
+
+    const removeprod = (item) => {
+        setCartItems(cartItems.filter(product => product.id !== item.id))
+    }
 
   return (
     <>
@@ -35,12 +49,12 @@ const CartItems = () => {
                                 </div>
                                 <div className='quantity-controls'>
                                     <div className='pm-container'>
-                                    <button className='pm'>-</button>
+                                    <button className='pm' onClick={() => decrementprod(item)}>-</button>
                                     <span>{item.quantity}</span>
-                                    <button className='pm'>+</button>
+                                    <button className='pm' onClick={() => incrementprod(item)}>+</button>
                                     </div>
                                 <div>
-                                    <button className='remove-btn'>
+                                    <button className='remove-btn' onClick={() => removeprod(item)}>
                                     remove
                                     </button>
                                     </div>
